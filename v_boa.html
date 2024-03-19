@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX - melhorada</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #usuario,
+        #senha,
+        #btn {
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        #btn {
+            background-color: dodgerblue;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+        }
+
+        #btn:hover {
+            color: dodgerblue;
+            background-color: white;
+            border: 1px solid black;
+            transition: .3s linear;
+
+        }
+
+        #btn:active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        a#link-btn {
+            text-decoration: none;
+            color: white;
+            background-color: dodgerblue;
+            padding: 1rem;
+            border-radius: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            transition: background .5s linear;
+        }
+
+        a#link-btn:hover {
+            background-color: white;
+            border: 1px solid black;
+            color: dodgerblue;
+        }
+
+        #linkedin-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #btn:hover #linkedin-link {
+            color: dodgerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <input type="email" name="user" id="usuario" placeholder="Insira seu login">
+            <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+            <button type="button" id="btn"><a id="linkedin-link" href="https://www.linkedin.com/in/luan-alexandre-santos-oliveira-065853240/" target="_blank">FAZER LOGIN</a></button>
+        </div>
+    </div>
+    <div class="link" style="text-align: center; margin: 2rem;">
+        <a id="link-btn" href="./index.html">VOLTAR PARA PÁGINA INICIAL</a>
+    </div>
+
+</body>
+
+</html>
